@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 .container {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: left;
   height: 75vh;
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;  */
+  display: flex;
+  gap: 20px;
   position: relative;
+  /* height: 75vh; */
+  /* margin: 0 auto; */
+  /* max-width: 1200px; */
+  /* padding: 20px; */
+  /* background-color: #1e1e1e; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .background {
@@ -15,6 +25,27 @@
   color: var(--bg-text);
   position: absolute;
   z-index: 1;
+}
+
+/* .box {
+  display: flex;
+  flex-direction: row;
+} */
+
+.left {
+  flex: 3; /* 60% of the space */
+  padding-right: 10px;
+  /* height: 10vh; */
+}
+
+.right {
+  flex: 5; /* 40% of the space */
+  padding-left: 10px;
+  /* background-color: #1e1e1e; */
+  border-radius: 8px;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .foreground {
@@ -115,7 +146,7 @@
     padding: 0 3rem;
   }
   .name {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .bio {
     font-size: 3rem;
